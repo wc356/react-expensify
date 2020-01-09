@@ -1,10 +1,10 @@
 // Object destructuring
 
 // const person = {
-//   name: "Woo",
-//   age: 23,
+//   name: "Alex",
+//   age: 30,
 //   location: {
-//     city: "Cliffside Park",
+//     city: "New York City",
 //     temp: 43
 //   }
 // };
@@ -31,12 +31,7 @@
 
 // Array destructuring
 
-const address = [
-  "1299 S Juniper Street",
-  "Cliffside Park",
-  "New Jersey",
-  "13325"
-];
+const address = ["1299 S Juniper Street", "New York City", "New York", "13325"];
 const [, city, state = "New York"] = address;
 console.log(`You are in ${city} ${state}.`);
 
