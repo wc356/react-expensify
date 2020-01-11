@@ -1,7 +1,7 @@
 import * as firebase from "firebase/app";
 import "firebase/auth";
-// import "firebase/analytics";
 import "firebase/database";
+// import "firebase/analytics";
 
 const firebaseConfig = {
   apiKey: process.env.FIREBASE_API_KEY,
@@ -18,8 +18,9 @@ firebase.initializeApp(firebaseConfig);
 // firebase.analytics();
 
 const database = firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, database as default };
+export { firebase, googleAuthProvider, database as default };
 
 // // child_removed
 // database.ref("expenses").on("child_removed", snapshot => {
